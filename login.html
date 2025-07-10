@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="/Assets/css/pages/login.css" />
+  </head>
+  <body>
+
+    <section class="login-container">
+
+      <div class="login-card">
+
+        <div class="icon">
+          <img src="/Assets/img/key.svg" alt="login-icon" />
+        </div>
+
+        <h1>Login</h1>
+        <p>Venha fazer parte da EcoLink</p>
+
+        <form>
+
+          <div class="input-fild">
+            <input type="email" placeholder="E-mail" required />
+          </div>
+
+          <div class="input-fild">
+            <input type="password" id="password" placeholder="Senha" required />
+            <img src="/Assets/img/eye-traco.svg" alt="mostrar senha" id="togglePassword"/>
+          </div>
+
+          <button type="submit">Login</button>
+
+          <div class="options">
+            <a href="#">Esqueceu a senha?</a>
+            <a href="/cadastro.html">Não tem uma conta? Cadastre-se</a>
+          </div>
+
+        </form>
+      </div>
+    </section>
+    <script src="/Assets/js/olho-magico.js"></script>
+  </body>
+</html>

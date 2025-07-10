@@ -1,0 +1,170 @@
+.sidebar-menu{
+    background-color: var(--verde-claro);
+    height: 139vh;
+    padding: 1.5rem;
+    color: var(--preto);
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    align-items: center;
+    font-family: fontMedium;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-menu.aberta {
+    transform: translateX(0);
+}
+
+#main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link .logo {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+#main-content{
+    padding: 16px;
+    transition: margin-right 0.3s ease-in-out;
+}
+
+#main-content.com-sidebar{
+    margin-right: 300px;
+}
+
+.toggle-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 50; 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.ativo{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-foto-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-menu .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.nav-links a{
+    font-size: 24px;
+    color: var(--preto);
+    padding: 0.5rem 1 rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 12px;
+}
+
+.nav-links a{
+    border-radius: 12px;
+    transition-property: color, background-color, fill;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.nav-links li .selected, 
+.nav-links a:hover{
+    color: var(--branco);
+    background-color: var(--preto);
+    fill: var(--verde);
+}
+
+
+.container-imagem-usuario {
+  display: flex; 
+  align-items: center; 
+  gap: 20px;
+  padding: 1rem;
+  max-width: 600px; 
+  margin: 2rem auto; 
+}
+
+.conteudo-usuario img {
+  max-width: 150px; 
+  height: auto;
+  display: block; 
+}
+
+
+.conteudo-usuario {
+    display: flex;              
+    justify-content: space-between;
+    align-items: center;          
+    width: 100%;                 
+    gap: 1rem;                    
+}
+
+.info-texto-usuario {
+    text-align: left;
+}
+
+.info-texto-usuario .user-name,
+.info-texto-usuario .user-email {
+    margin: 0;
+}
+
+.info-texto-usuario .user-name {
+    font-size: 1rem;
+}
+
+.info-texto-usuario .user-email {
+    font-size: 0.8rem; 
+    color: #555;
+}
+
+.link-logout box-icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--preto); 
+    transition: fill 0.2s ease;
+}
+
+.link-logout:hover box-icon {
+    fill: #e74c3c;
+}

@@ -1,0 +1,116 @@
+.conteudo-principal {
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: center;         
+    background-color: var(--verde-claro);    
+    padding: 4rem 5%;             
+    gap: 2rem;                     
+}
+
+.textos-conteudo h1 {
+    font-family: fontBold;
+    font-size: 2.8rem; 
+    line-height: 1.2;    
+    color: var(--preto-claro);    
+    margin-bottom: 1rem; 
+}
+
+.textos-conteudo h2 {
+    font-family: fontMedium;
+    font-size: 1.1rem;
+    font-weight: normal; 
+    line-height: 1.5;
+    color: var(--preto-claro);
+}
+
+.texto-destaque {
+    color: var(--verde)
+}
+
+.imgs-conteudo {
+    display: flex;      
+    align-items: center;
+}
+
+.imgs-conteudo img {
+    width: 150px;     
+    height: 150px;
+    border-radius: 50%; 
+    border: 5px solid white; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.imgs-conteudo img:nth-child(2) {
+    position: relative; 
+    transform: scale(1.2);
+    z-index: 1; 
+}
+
+.imgs-conteudo img:nth-child(1) {
+    margin-right: -40px; 
+}
+
+.imgs-conteudo img:nth-child(3) {
+    margin-left: -40px; 
+}
+
+@media (max-width: 2045px) {
+    .conteudo-principal {
+        flex-direction: column; 
+        text-align: center;   
+    }
+
+    .imgs-conteudo {
+        margin-top: 2rem;
+    }
+}
+
+.containers {
+    display: flex;            
+    justify-content: center;   
+    align-items: center;        
+    flex-wrap: wrap;          
+    gap: 14rem;               
+    padding: 10rem;            
+}
+
+.card-info {
+    background-color: var(--verde-claro);
+    color: var(--preto-claro);      
+    border-radius: 15px;     
+    padding: 2rem 1.5rem;     
+    width: 280px;              
+    height: 350px;             
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;     
+    align-items: center;         
+    text-align: center;       
+    justify-content: space-between;  
+}
+
+.card-info h1 {
+    font-family: fontBold;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;  
+}
+
+.card-info a {
+    color: var(--preto-claro);
+}
+
+.card-info box-icon {
+    width: 200px;
+    height: 200px;
+    fill: var(--verde); 
+}
+
+.card-info {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-info:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+}
